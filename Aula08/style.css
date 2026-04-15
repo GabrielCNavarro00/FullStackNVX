@@ -1,12 +1,3 @@
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background: #eee;
-  }
-
-  canvas {
-    border: 2px solid black;
-  }
-  derreer
+#canvas {
+  background-color: gray;
+}
