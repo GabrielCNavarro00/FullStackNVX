@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 #canvas {
   background-color: gray;
 }
-=======
   body {
     display: flex;
     flex-direction: column;
@@ -14,4 +12,3 @@
   canvas {
     border: 2px solid black;
   }
->>>>>>> 9c972e3015a5212d48f9ce57c2671211f5be6451
