@@ -14,6 +14,14 @@ let retangulo_2 = {
     cor: "blue"
 };
 
+
+let retangulo_3 = {
+    x:200,
+    y:200,
+    w:50,
+    h:50,
+    cor: "green"
+}
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
@@ -39,6 +47,7 @@ function desenhar(){
 
     desenhaRetangulo(retangulo_1);
     desenhaRetangulo(retangulo_2);
+    desenhaRetangulo(retangulo_3);
 
     requestAnimationFrame(desenhar);
 }
@@ -47,11 +56,18 @@ document.addEventListener("keydown", function(evento){
     var tecla = evento.key;
     var vel = 5;
 
-    if (tecla == "ArrowUp")    retangulo_2.y -= vel;
-    if (tecla == "ArrowDown")  retangulo_2.y += vel;
-    if (tecla == "ArrowLeft")  retangulo_2.x -= vel;
-    if (tecla == "ArrowRight") retangulo_2.x += vel;
+    if (tecla == "ArrowUp" || tecla == "w")    {retangulo_2.y -= vel;}
+    if (tecla == "ArrowDown" || tecla == "s")  {retangulo_2.y += vel;}
+    if (tecla == "ArrowLeft" || tecla == "a")  {retangulo_2.x -= vel;}
+    if (tecla == "ArrowRight" || tecla == "d") {retangulo_2.x += vel;}
 });
 
 desenhar();
 
+
+document.addEventListener("mousemove", function(evento){
+    var rect = canvas.getBoundingClientRect();
+    var x_mouse  = evento.clientX - rect.left;
+    var y_mouse = evento.clientY -rect.top;
+    console.log(x_mouse, y_mouse)
+});

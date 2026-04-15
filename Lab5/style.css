@@ -1,0 +1,16 @@
+#quadra {
+    background-color: white;
+}
+
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#casa {
+    background-color: aquamarine;
+}
