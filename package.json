@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "ejs": "^5.0.2"
   }
 }
