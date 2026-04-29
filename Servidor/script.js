@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -69,13 +68,3 @@ app.post('/cadastro', (req, res) => {
     });
 });
 
-
-=======
-var http = require("http");
-var express = require("express");
-var app = express();
-app.use(express.static('./public'));
-var server = http.createServer(app);
-server.listen(3000);
-console.log("Servidor rodando...")
->>>>>>> 5957029e17d5a932fb706a6418d8d139e4f1018b
