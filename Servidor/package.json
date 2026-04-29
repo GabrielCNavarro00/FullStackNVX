@@ -13,7 +13,10 @@
   "author": "Gabriel C. Navarro",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "ejs": "^5.0.2",
+=======
+>>>>>>> 5957029e17d5a932fb706a6418d8d139e4f1018b
     "express": "^5.2.1"
   }
 }
